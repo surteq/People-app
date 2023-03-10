@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 // import ScreenOne from './screens/ScreenOne/ScreenOne';
-import ScreenOne_test from './screens/ScreenOne/ScreenOne_test';
+import ScreenOne from './screens/ScreenOne/ScreenOne';
 import ScreenTwo from './screens/ScreenTwo';
 import ScreenThree from './screens/ScreenThree';
 
@@ -12,14 +12,12 @@ const Tab = createBottomTabNavigator();
 
 const App = () => {
    
-
-  
   return (
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen 
           name="Users" 
-          component={ScreenOne_test}
+          component={ScreenOne}
           options={{
             tabBarIcon: ({ color, size }) => (
               <Ionicons name="ios-home" size={size} color={color} />
